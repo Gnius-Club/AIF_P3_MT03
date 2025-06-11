@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P3-TM03</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 3 3ro Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje:</strong>
+                                    <ul>
+                                        <li>Micro:bit: Matriz LED (mostrar texto, pausa).</li>
+                                        <li>Plan (GCS): Secuenciación.</li>
+                                        <li>IA (Conceptual): Máquinas y secuencias de instrucciones.</li>
+                                        <li>Preparatorio IA: Secuencia en plan (GCS).</li>
+                                        <li>Objetivo General de la Sesión: Que los estudiantes aprendan a controlar la secuencia de acciones en el Micro:bit utilizando comandos de mostrar texto y pausa, y comprendan la importancia de la secuenciación de instrucciones para que las máquinas, incluyendo las IAs, realicen tareas correctamente.</li>
+                                    </ul>
+                                    <strong>Tácticas Principales:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">Saludo Interactivo con IA:</strong> Activación y personalización de la IA.</li>
+                                        <li><strong class="tactic-highlight">"I Can Statement" + Ejemplificación:</strong> Clarificar objetivos y mostrar posibilidades.</li>
+                                        <li><strong class="tactic-highlight">AI GYM:</strong> Aprendizaje guiado por IA sobre conceptos y bloques.</li>
+                                        <li><strong class="tactic-highlight">Brain Spark:</strong> Proceso de ideación, diseño (plan con IA) y programación individual.</li>
+                                        <li><strong class="tactic-highlight">Gnius STORM (Think-Pair-Share):</strong> Compartición, prueba y retroalimentación de proyectos.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un programa en Micro:bit que muestre una secuencia de mensajes de texto e iconos, utilizando pausas, creado a partir de un plan (GCS) generado con la ayuda de la IA y traducido a bloques en MakeCode.</li>
+                                        <li>Retroalimentación recibida y dada durante Gnius STORM.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat de "Agente Gnius" (Xolo IA) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-16 propuestas para esta sesión).</li>
+                                        <li>Micro:bits y baterías.</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Confirmar acceso y funcionamiento de MakeCode.</li>
+                                                <li>Asegurar disponibilidad y carga de Micro:bits/baterías.</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                                <li>Probar el chat "Agente Gnius" (Xolo) para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                        <li><strong>Ejemplo Profesor:</strong> Tener listo y funcional un proyecto en Micro:bit que muestre una secuencia simple (ej. "HOLA" -> Icono -> "ADIOS") usando los bloques de mostrar texto, mostrar icono y pausa. Este proyecto debe ser creación del profesor.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>El chatbot da la bienvenida y genera entusiasmo por aprender a controlar secuencias y tiempo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Saludo del Profesor e Instrucción a Xolo ⏰ 0.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 2). Saludar a los alumnos y dar la instrucción de recordar su perfil a la IA y saludarla.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, Genios! 👋 ¡Bienvenidos a una misión donde controlaremos el tiempo y el orden! Como siempre, activaremos a Xolo. Salúdenlo y recuérdenle su perfil.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Respuesta de Xolo y Verificación ⏰ 2.5 minutos</h3>
+                            <p>(Los alumnos interactúan con Xolo. El profesor monitorea).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">¡Muy bien! Xolo ya les está respondiendo y nos dice: "¡Hola, secuenciadores de la tecnología! Hoy vamos a darle un toque mágico a los mensajes y dibujos: ¡vamos a hacer que las cosas sucedan en un orden específico, como una historia paso a paso! ¡Aprenderemos a controlar el tiempo y el mensaje de nuestro Micro:bit!" ¿Todos recibieron el saludo de Xolo? Si alguien tiene problemas, avíseme.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Introducción de la Misión con "I Can Statement" ⏰ 5 minutos</h2>
+                <p>Presentar el concepto de secuenciación y el objetivo de la clase, mostrando un ejemplo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: La Importancia del Orden ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 3). El profesor explica la importancia del orden en las instrucciones.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Imaginemos que queremos que nuestro Micro:bit primero nos salude diciendo 'Hola', luego muestre un corazón, y después se despida diciendo 'Adiós'. ¿Podría hacerlo? ¡Claro que sí! Pero es muy importante el orden en el que le damos esas instrucciones. Si las instrucciones están desordenadas, el Micro:bit podría hacer algo diferente a lo que esperamos. (Opcional: El profesor muestra SU Micro:bit con SU ejemplo de secuencia "HOLA" -> CORAZÓN -> "ADIOS"). Vean cómo mi Micro:bit sigue los pasos en orden.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: "I Can Statement" ⏰ 1.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 4). El profesor presenta el "I Can Statement".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Hoy, aprenderemos a contar historias con nuestro Micro:bit, mensaje a mensaje y dibujo a dibujo." Al final de la clase, podrán decir: <strong>"Yo puedo hacer que mi Micro:bit muestre mensajes de texto, haga pausas, y siga mis instrucciones en el orden exacto que yo le doy, usando mi plan y la ayuda de la IA."</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Invitación a Crear Historias ⏰ 1.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 5). Motivar a los alumnos a pensar en sus propias secuencias.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Así que, empiecen a pensar... ¿Qué pequeña historia o secuencia de eventos quieren que su Micro:bit muestre hoy? ¿Un saludo especial? ¿Una mini-animación? ¡Prepárense para ser directores de sus Micro:bits!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM ⏰ 5 minutos</h2>
+                <p>Los alumnos interactúan con Xolo para aprender sobre secuenciación y los comandos "mostrar texto" y "ESPERAR".</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Instrucción para interactuar con Xolo ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 6). Guiar a los alumnos para que pidan la información a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Al A.I. GYM de las secuencias! 🎬 Xolo nos explicará cómo darle orden a nuestras creaciones. Escriban en el chat: <strong>'Mi perfil es [escribe aquí tu perfil] y quiero que me expliques qué es la secuenciación y cómo usar los comandos del Micro:bit para mostrar texto en su pantalla y para que haga pausas entre acciones.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Interacción con Xolo y Preguntas ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 7 y 8 durante la interacción). Los alumnos reciben la explicación de Xolo directamente en el chat.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Mientras los alumnos interactúan con Xolo) ¡Perfecto! Xolo les está explicando que la secuenciación es como seguir una receta: ¡el orden importa! Les está presentando dos comandos nuevos para su 'plan' (GCS): `mostrar texto "[SU MENSAJE]"` para que el Micro:bit hable, y `ESPERAR [NÚMERO] segundos` para darle tiempo entre acciones. También les recuerda que las IAs y los robots necesitan instrucciones claras y en orden para funcionar. Si tienen dudas sobre cómo usar `mostrar texto` o `ESPERAR`, o quieren más ejemplos de por qué el orden es importante, ¡pregúntenle a Xolo!<br>
+                                    <strong>* 'Xolo, ¿puedo poner números en `mostrar texto`?'</strong><br>
+                                    <strong>* '¿Qué pasa si pongo `ESPERAR 0.5 segundos`?'</strong><br>
+                                    <strong>* 'Dame otro ejemplo de una secuencia en la vida real.'</strong></p>
+                                 <p class="dialogue assistant">Xolo les podría mostrar un ejemplo de plan (GCS) como este:</p>
+                                 <pre class="dialogue assistant" style="color: #d32f2f;">
+AL INICIO:
+    mostrar texto "HOLA"
+    ESPERAR 1 segundo
+    mostrar icono CORAZON</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 20 minutos</h2>
+                <p>Proceso de ideación, diseño (plan con IA) y programación individual para crear una secuencia con texto, iconos y pausas.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Ideación de su Secuencia ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 9). Pregunta activadora para la idea de la secuencia.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Directores, a sus puestos! Ahora que saben cómo mostrar texto y hacer pausas, <strong>¿qué secuencia o pequeña historia quieren que su Micro:bit cuente? Puede ser un saludo, mostrar un icono y luego su nombre; o quizás un pequeño cuento con dos o tres pasos.</strong> Si no se les ocurre nada, ¡no se preocupen! Pueden pedirle a Xolo: 'Xolo, dame una idea simple de una secuencia para mi Micro:bit que use texto y un icono.' ¡Usen su creatividad o la ayuda de Xolo! Tienen 1 minuto para pensar en su idea de secuencia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pedir el Plan a Xolo para su Secuencia ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 10). Instrucción para pedir el plan (GCS) a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">¿Ya tienen su idea de secuencia? ¡Genial! Ahora, detallen los pasos a Xolo. Por ejemplo: <strong>'Xolo, quiero que mi Micro:bit me dé la bienvenida diciendo "BIENVENIDOS", luego espere un poco, después muestre una carita feliz, espere otro poco, y finalmente diga mi nombre: [Su Nombre].'</strong> (O la secuencia que hayan elegido o que Xolo les haya sugerido). Xolo les ayudará a estructurar el 'plan' con los comandos y las pausas.</p>
+                                 <p class="dialogue assistant">Xolo podría generar un plan (GCS) como este para el ejemplo anterior:</p>
+                                 <pre class="dialogue assistant" style="color: #d32f2f;">
+AL INICIO:
+    // Esto mostrará una secuencia de bienvenida y un nombre.
+    mostrar texto "BIENVENIDOS"
+    ESPERAR 1.5 segundos
+    mostrar icono CARA_FELIZ
+    ESPERAR 1 segundo
+    mostrar texto "SOY [TU_NOMBRE]"</pre>
+                                 <p class="dialogue assistant">¡Analicen bien el plan que Xolo les dé para su propia secuencia!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Implementación en MakeCode y Prueba de la Secuencia ⏰ 13 minutos</h3>
+                            <p>(Proyectar Diapositiva 11). Tiempo para traducir el plan a bloques, probar y depurar.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    ¡Muy bien! Ahora tienen su 'plan' secuencial de Xolo. Es momento de ir a MakeCode. Arrastren los bloques 'al iniciar', 'mostrar texto', 'mostrar icono' y 'pausa (milisegundos)' en el orden exacto que dice su plan. ¡Recuerden que 1 segundo son 1000 milisegundos! Tienen 13 minutos.<br>
+                                    <strong>* Prueben en el simulador.</strong> ¿Su Micro:bit cuenta la historia en el orden y con los tiempos correctos?<br>
+                                    <strong>* Si algo no funciona, revisen el orden de sus bloques y los valores de las pausas. ¡La secuenciación es como dirigir una obra, cada actor (bloque) debe entrar a tiempo!</strong><br>
+                                    Cuando su secuencia funcione en el simulador, ¡conecten su Micro:bit, descarguen el programa y disfruten de su creación!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Mejoras - Refinando la Secuencia (Si hay tiempo) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 12). Sugerir mejoras y exploraciones adicionales.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Si su secuencia ya es una obra maestra, ¡aquí van unos desafíos de director! <strong>¿Pueden hacer que los mensajes de texto se desplacen más rápido o más lento (cambiando el valor en el bloque de pausa o explorando otras opciones de texto si las conocen)? ¿Pueden añadir un nuevo ícono o un nuevo mensaje de texto en medio de su secuencia? ¿Podrían crear una historia muy corta como "¡Hola Mundo!" usando un icono que salude y luego el texto?</strong> Pídanle a Xolo ayuda para modificar su plan o intenten ajustar los bloques ustedes mismos. ¡La función debe continuar!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Compartir secuencias, recibir retroalimentación y reflexionar sobre la importancia del orden.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual) ⏰ 0.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 13). Instrucción para la reflexión individual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     ¡Directores, sus Micro:bits están contando historias! Antes de compartir, piensen un momento:<br>
+                                    <strong>¿Fue fácil o difícil hacer que las cosas sucedieran en el orden correcto?</strong><br>
+                                    <strong>¿Qué pasó si una instrucción (un bloque) estaba en el lugar equivocado en su primer intento?</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Pair - Parejas) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 14). Instrucciones para el intercambio de proyectos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    ¡Ahora, en parejas! Muestren su secuencia en el Micro:bit. Explíquenle a su compañero qué historia o mensaje querían contar y cómo ordenaron los pasos. El compañero puede preguntar:<br>
+                                    <strong>* '¿Qué parte de tu secuencia te gustó más?'</strong><br>
+                                    <strong>* '¿Fue complicado calcular los tiempos de las pausas?'</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Gnius STORM (Share - Retroalimentación y Reflexión Grupal) ⏰ 1.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 15). Fomentar la compartición de experiencias sobre la secuenciación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    ¡Muy bien! Ahora, compartamos algunas experiencias: ¿Fue fácil o difícil hacer que las cosas sucedieran en el orden correcto? ¿Qué pasó si una instrucción estaba en el lugar equivocado?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Gnius STORM (Cierre del Profesor/Chatbot) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 16). Cierre de la sesión por el profesor y/o chatbot.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hoy fueron verdaderos maestros de la secuenciación! Descubrieron lo importante que es dar instrucciones en orden para que las máquinas funcionen bien. Así como un rompecabezas solo encaja si se arma en orden, una IA o un robot necesita una secuencia lógica para hacer bien su trabajo. ¡Muy bien hecho!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
